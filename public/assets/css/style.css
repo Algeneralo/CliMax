@@ -125,7 +125,6 @@ button:focus {
 .banner {
     padding: 125px 0px 18px 1px;
     position: relative;
-    margin-top: 1%;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -665,7 +664,7 @@ footer hr:before {
 footer .icon a {
     width: 2.5rem;
     height: 2.5rem;
-    line-height: 1.7em;
+    line-height: 2em;
     font-size: 1.5em;
     text-align: center;
     border-radius: 50%;
