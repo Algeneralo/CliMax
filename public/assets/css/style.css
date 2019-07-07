@@ -598,6 +598,39 @@ button:focus {
     color: #2A348C;
 }
 
+.photos .filter-btn {
+    padding: 0 1.65em 0.37em;
+}
+
+.photos .filter-btn:not(:last-of-type):after {
+    content: '';
+    width: 1px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    background: linear-gradient(to top, #d6d6d3 0%, #d6d6d3 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 60%, #d6d6d3 60%, #d6d6d3 100%);
+}
+
+.photos span {
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    font-size: 1.375em;
+    letter-spacing: -0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.photos .filter-btn.active span, .photos .filter-btn:hover span {
+    border-bottom-color: #ff8a48;
+    color: #ff8a48;
+}
+
+.photos .btn.focus, .photos .btn:focus {
+    box-shadow: none;
+}
+
 /*----------------------------------------footer------------------------------------*/
 footer {
     background-color: #333;
