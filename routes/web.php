@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/gallery', function () {
     return view('website.gallery');
 });
+Route::get('/contact-us', function () {
+    return view('website.contact-us');
+});
