@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Orkeny;
+    font-family: Orkney;
     src: url("../fonts/Orkney-Regular.otf");
 }
 
@@ -9,12 +9,16 @@
 }
 
 @font-face {
-    font-family: Orkeny-Bold;
+    font-family: Orkney-Bold;
     src: url("../fonts/Orkney-Bold.otf");
 }
 
 body {
-    font-family: Orkeny, sans-serif;
+    font-family: Orkney, sans-serif;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,7 +101,7 @@ button:focus {
     font-weight: 700;
     font-size: 150px;
     color: #F7A21E;
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
 }
 
 .carousel-caption a {
@@ -115,6 +119,80 @@ button:focus {
     background-color: #F7A21E;
     color: white !important;
 
+}
+
+/*----------------------------------------banner style------------------------------------*/
+.banner {
+    padding: 125px 0px 18px 1px;
+    position: relative;
+    margin-top: 1%;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+
+.banner:before {
+    content: '';
+    background: rgba(8, 15, 32, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner-content {
+    position: relative;
+}
+
+.banner-content h4 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    /*font-weight: 700;*/
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-family: Orkney-Bold;
+}
+
+.banner-link {
+    background: #fff;
+    border-radius: 17px;
+    display: inline-block;
+    padding: 0px 30px;
+    margin-top: 50px;
+}
+
+.banner-link a {
+    line-height: 34px;
+    padding-right: 16px;
+    font-size: 14px;
+    color: #748491;
+    position: relative;
+    transition: all 400ms linear 0s;
+}
+
+.banner-link a.active, .banner-link a:hover {
+    color: #07B4E3;
+}
+
+.banner-link a:last-child {
+    padding-right: 0;
+}
+
+.banner-link a:not(:last-of-type):before {
+    content: "\f105";
+    /*font: normal normal normal 14px/1 FontAwesome;*/
+    font-family: Font Awesome\ 5 Pro;
+    right: 3px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
 }
 
 /*----------------------------------------services style------------------------------------*/
@@ -137,7 +215,7 @@ button:focus {
     font-weight: 700;
     letter-spacing: -2.4px;
     line-height: 1.09em;
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     padding: 20px 120px;
     color: #2A348C;
 }
@@ -206,7 +284,7 @@ button:focus {
 }
 
 .offers .offers-title h1 {
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     font-size: 5.625em;
     font-weight: 700;
     font-style: normal;
@@ -280,7 +358,7 @@ button:focus {
 }
 
 .work-sample h1 {
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     font-size: 5.625em;
     font-weight: 700;
     text-transform: none;
@@ -370,7 +448,7 @@ button:focus {
 .clients h3 {
     /*color: #C2218C;*/
     color: #2A348C;
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     font-size: 3.438em;
     font-weight: 700;
     letter-spacing: -2.4px;
@@ -412,7 +490,7 @@ button:focus {
 }
 
 .gallery .view-more h3 {
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     font-size: 3.438em;
     font-weight: 700;
     position: absolute;
@@ -447,7 +525,7 @@ button:focus {
 
 .contact-us h1 {
     line-height: 1em;
-    font-family: Orkeny-Bold, sans-serif;
+    font-family: Orkney-Bold, sans-serif;
     font-size: 5em;
     font-weight: 700;
     padding: 0 250px;
@@ -495,6 +573,29 @@ button:focus {
 .contact-us i {
     font-size: 25px;
     color: #ff8a48;
+}
+
+/*----------------------------------------photos------------------------------------*/
+.photos {
+    padding: 100px 0;
+}
+
+.photos-header h3 {
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1em;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: Pacifico, cursive;
+}
+
+.photos-header h2 {
+    font-size: 3.438em;
+    font-weight: 700;
+    letter-spacing: -2.4px;
+    font-family: Orkney-Bold;
+    color: #2A348C;
 }
 
 /*----------------------------------------footer------------------------------------*/
