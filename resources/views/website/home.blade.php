@@ -11,7 +11,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/slider4.jpg" alt="First slide">
+                    <img class="d-block w-100" src="assets/images/website/slider4.jpg" alt="First slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
                         <p class="fadeInLeft" style="color: white">We plan the best events</p>
@@ -20,7 +20,7 @@
 
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/slider2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="assets/images/website/slider2.jpg" alt="Second slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
                         <p class="fadeInLeft" style="color: #2A348C">We plan the best events</p>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/slider3.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="assets/images/website/slider3.jpg" alt="Second slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
                         <p class="fadeInLeft" style="color: white">We plan the best events</p>
@@ -48,7 +48,7 @@
                 </p>
                 <div class="row services-body text-center">
                     <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/service-2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
                                 <a href="#">Graphic design</a>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/service-3.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/website/service-3.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
                                 <a href="#">Event management</a>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/service-4.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/website/service-4.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
                                 <a href="#">Interior design</a>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/service-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/website/service-1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
                                 <a href="#">Setup</a>
@@ -184,16 +184,16 @@
     <section id="gallery" class="gallery">
         <div class="container-fluid pt-3 pb-3">
             <div class="row">
-                <img class="img-fluid col-md-6 pl-md-0 pr-md-0" src="assets/images/gallery-3.jpeg">
-                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-3" src="assets/images/gallery-1.JPG">
-                <img class="img-fluid col-md-3 col-6 pr-md-0 pr-md-1" src="assets/images/gallery-4.JPG"
+                <img class="img-fluid col-md-6 pl-md-0 pr-md-0" src="assets/images/website/gallery-3.jpeg">
+                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-3" src="assets/images/website/gallery-1.JPG">
+                <img class="img-fluid col-md-3 col-6 pr-md-0 pr-md-1" src="assets/images/website/gallery-4.JPG"
                      style="object-fit: cover;">
                 <!--second row-->
-                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-0 pt-md-3" src="assets/images/gallery-2.JPG">
-                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-2 pt-md-3" src="assets/images/gallery-5.JPG"
+                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-0 pt-md-3" src="assets/images/website/gallery-2.JPG">
+                <img class="img-fluid col-md-3 col-6 pr-md-0 pl-md-2 pt-md-3" src="assets/images/website/gallery-5.JPG"
                      style="object-fit: cover;">
                 <div class="view-more col-md-6 pr-md-0 pl-md-3 pt-md-3">
-                    <img class="img-fluid w-100" src="assets/images/service-1.jpg">
+                    <img class="img-fluid w-100" src="assets/images/website/service-1.jpg">
                     <div class="overlay">
                         <h3>See Our Best Events Gallery!</h3>
                         <a href="/gallery" class="btn">Visit Gallery</a>

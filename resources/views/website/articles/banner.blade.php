@@ -1,4 +1,4 @@
-<section class="banner" style="background: url({{'/assets/images/'.$image}}) no-repeat scroll center center;">
+<section class="banner" style="background: url({{'/assets/images/website/'.$image}}) no-repeat scroll center center;">
     <div class="container">
         <div class="banner-content">
             <h4 class="text-center">{{$title}}</h4>

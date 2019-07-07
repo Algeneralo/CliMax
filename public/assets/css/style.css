@@ -400,7 +400,7 @@ button:focus {
     opacity: 0.95;
     cursor: pointer;
     /*background-image: linear-gradient(transparent, #000);*/
-    background-image: url("../images/video-overlay.jpg"), linear-gradient(transparent, #000);
+    background-image: url("../images/website/video-overlay.jpg"), linear-gradient(transparent, #000);
     background-size: cover;
     transition: opacity 150ms;
 }

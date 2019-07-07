@@ -40,65 +40,65 @@
         </div>
         <div id="gallery-content">
 
-            <a href="assets/images/gallery-1.JPG" class="photos">
-                <img src="assets/images/gallery-1.JPG" title="Image Title">
+            <a href="assets/images/website/gallery-1.JPG" class="photos">
+                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/slider2.jpg" class="design">
-                <img src="assets/images/slider2.jpg" title="Image Title">
+            <a href="assets/images/website/slider2.jpg" class="design">
+                <img src="assets/images/website/slider2.jpg" title="Image Title">
             </a>
-            <a href="assets/images/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/gallery-2.JPG">
+            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
+                <img src="assets/images/website/gallery-2.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" class="photos">
-                <img src="assets/images/gallery-1.JPG" title="Image Title">
+            <a href="assets/images/website/gallery-1.JPG" class="photos">
+                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/slider2.jpg" class="design">
-                <img src="assets/images/slider2.jpg" title="Image Title">
+            <a href="assets/images/website/slider2.jpg" class="design">
+                <img src="assets/images/website/slider2.jpg" title="Image Title">
             </a>
-            <a href="assets/images/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/gallery-2.JPG">
+            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
+                <img src="assets/images/website/gallery-2.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" class="photos">
-                <img src="assets/images/gallery-1.JPG" title="Image Title">
+            <a href="assets/images/website/gallery-1.JPG" class="photos">
+                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/slider2.jpg" class="design">
-                <img src="assets/images/slider2.jpg" title="Image Title">
+            <a href="assets/images/website/slider2.jpg" class="design">
+                <img src="assets/images/website/slider2.jpg" title="Image Title">
             </a>
-            <a href="assets/images/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/gallery-2.JPG">
+            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
+                <img src="assets/images/website/gallery-2.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" class="photos">
-                <img src="assets/images/gallery-1.JPG" title="Image Title">
+            <a href="assets/images/website/gallery-1.JPG" class="photos">
+                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/slider2.jpg" class="design">
-                <img src="assets/images/slider2.jpg" title="Image Title">
+            <a href="assets/images/website/slider2.jpg" class="design">
+                <img src="assets/images/website/slider2.jpg" title="Image Title">
             </a>
-            <a href="assets/images/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/gallery-2.JPG">
+            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
+                <img src="assets/images/website/gallery-2.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
-            <a href="assets/images/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/gallery-1.JPG">
+            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
+                <img src="assets/images/website/gallery-1.JPG">
             </a>
 
         </div>
