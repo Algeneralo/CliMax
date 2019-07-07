@@ -39,7 +39,7 @@
         </div>
     </section>
     <!--<div class="main-scroll">-->
-    <section id="section1" class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="row">
                 <h4 class="col-12 text-center">Hello there!</h4>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section id="section2" class="offers">
+    <section id="offers" class="offers">
         <div class="container">
             <div class="row">
                 <div class="offer-items col-sm-7 col-md-6 pull-left">
@@ -139,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section id="section3" class="clients">
+    <section id="clients" class="clients">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
@@ -161,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section id="section4" class="work-sample">
+    <section class="work-sample">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 p-lg-5">
@@ -181,7 +181,7 @@
             </div>
         </div>
     </section>
-    <section id="section5" class="gallery">
+    <section id="gallery" class="gallery">
         <div class="container-fluid pt-3 pb-3">
             <div class="row">
                 <img class="img-fluid col-md-6 pl-md-0 pr-md-0" src="assets/images/gallery-3.jpeg">
@@ -196,13 +196,13 @@
                     <img class="img-fluid w-100" src="assets/images/service-1.jpg">
                     <div class="overlay">
                         <h3>See Our Best Events Gallery!</h3>
-                        <a href="/gallery.html" class="btn">Visit Gallery</a>
+                        <a href="/gallery" class="btn">Visit Gallery</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section6" class="contact-us">
+    <section id="contact-us" class="contact-us">
         <div class="container">
             <div class="row text-center">
                 <h1>We are here to help you</h1>
@@ -259,4 +259,7 @@
             </div>
         </div>
     </section>
+@endsection
+@section('script')
+    <script src="{{asset('assets/js/video-overlay.js')}}"></script>
 @endsection
