@@ -13,23 +13,28 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#slider">Home <span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="ss">Who we are</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#section1">Our lines</a>
+                    <a class="nav-link" href="{{Request::is("/") ? '#services' : '/services'}}">Our lines</a>
+                </li>
+                @if(Request::is('/'))
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">What we offer</a>
+                    </li>
+                @endif
+                <li class="nav-item">
+                    <a class="nav-link" href="{{Request::is("/") ? '#clients' : '/clients'}} ">Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">What we offer</a>
+                    <a class="nav-link" href="{{Request::is("/") ? '#gallery' : '/gallery'}}">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section3">Clients</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section5">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section6">Contact us</a>
+                    <a class="nav-link" href="{{Request::is("/") ? '#contact-us' : '/contact-us'}}">Contact
+                        us</a>
                 </li>
                 <!--<li class="nav-item dropdown">-->
                 <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"-->
