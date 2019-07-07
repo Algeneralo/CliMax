@@ -40,67 +40,51 @@
         </div>
         <div id="gallery-content">
 
-            <a href="assets/images/website/gallery-1.JPG" class="photos">
-                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
+            <a href="assets/images/upload/Ahsaa event.mp4" class="video">
+                <img src="assets/images/upload/Ahsaa event.mp4" title="Image Title">
             </a>
-            <a href="assets/images/website/slider2.jpg" class="design">
-                <img src="assets/images/website/slider2.jpg" title="Image Title">
+            <a href="assets/images/upload/DSC_7396.JPG" class="photos">
+                <img src="assets/images/upload/DSC_7396.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/website/gallery-2.JPG">
+            <a href="assets/images/upload/DSC_7417.JPG" class="photos">
+                <img src="assets/images/upload/DSC_7417.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/website/gallery-1.JPG">
+            <a href="assets/images/upload/DSC_7429.JPG" class="photos">
+                <img src="assets/images/upload/DSC_7429.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/website/gallery-1.JPG">
+            <a href="assets/images/upload/DSC_7435.JPG" class="photos">
+                <img src="assets/images/upload/DSC_7435.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" class="photos">
-                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
-            </a>
-            <a href="assets/images/website/slider2.jpg" class="design">
-                <img src="assets/images/website/slider2.jpg" title="Image Title">
-            </a>
-            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/website/gallery-2.JPG">
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/website/gallery-1.JPG">
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/website/gallery-1.JPG">
+            <a href="assets/images/upload/DSC_7471.JPG" class="photos">
+                <img src="assets/images/upload/DSC_7471.JPG" title="Image Title">
             </a>
             <a href="assets/images/website/gallery-1.JPG" class="photos">
                 <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/slider2.jpg" class="design">
-                <img src="assets/images/website/slider2.jpg" title="Image Title">
-            </a>
-            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/website/gallery-2.JPG">
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/website/gallery-1.JPG">
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/website/gallery-1.JPG">
-            </a>
             <a href="assets/images/website/gallery-1.JPG" class="photos">
                 <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/slider2.jpg" class="design">
-                <img src="assets/images/website/slider2.jpg" title="Image Title">
+            <a href="assets/images/upload/1234.jpg" class="design">
+                <img src="assets/images/upload/1234.jpg" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-2.JPG" title="Image Title" class="design">
-                <img src="assets/images/website/gallery-2.JPG">
+            <a href="assets/images/upload/3215.jpg" class="design">
+                <img src="assets/images/upload/3215.jpg" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="photos">
-                <img src="assets/images/website/gallery-1.JPG">
+            <a href="assets/images/upload/4325.jpg" class="design">
+                <img src="assets/images/upload/4325.jpg" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" title="Image Title" class="video">
-                <img src="assets/images/website/gallery-1.JPG">
+            <a href="assets/images/upload/5463.jpg" class="design">
+                <img src="assets/images/upload/5463.jpg" title="Image Title">
             </a>
-
+            <a href="assets/images/upload/54321.jpg" class="design">
+                <img src="assets/images/upload/54321.jpg" title="Image Title">
+            </a>
+            <a href="assets/images/upload/Cap23.jpg" class="design">
+                <img src="assets/images/upload/Cap23.jpg" title="Image Title">
+            </a>
+            <a href="assets/images/upload/Capture12.jpg" class="design">
+                <img src="assets/images/upload/Capture12.jpg" title="Image Title">
+            </a>
         </div>
     </div>
 @endsection
