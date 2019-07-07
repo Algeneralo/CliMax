@@ -26,17 +26,17 @@
     </style>
 @endsection
 @section('body')
-    @includeIf('website.articles.banner',['title'=>"Gallery",'name'=>'Gallery','image'=>'sss.s'])
+    @includeIf('website.articles.banner',['title'=>"Gallery",'name'=>'Gallery','image'=>'gallery-banner.jpg'])
     <div class="container-fluid photos">
         <div class="col-12 photos-header text-center">
-            <h3>Portfolio</h3>
+            <h3 class="mb-4">Portfolio</h3>
             <h2>Our Best Events Gallery</h2>
         </div>
-        <div class="col-12 text-center">
-            <button class="btn btn-success filter-btn active" data-filter="false">All</button>
-            <button class="btn btn-success filter-btn" data-filter=".photos">Photos</button>
-            <button class="btn btn-success filter-btn" data-filter=".design"> Design</button>
-            <button class="btn btn-success filter-btn" data-filter=".video"> Video</button>
+        <div class="col-12 text-center mt-5 mb-4">
+            <button class="btn bg-transparent filter-btn active" data-filter="false"><span>All</span></button>
+            <button class="btn bg-transparent filter-btn" data-filter=".photos"><span>Photos</span></button>
+            <button class="btn bg-transparent filter-btn" data-filter=".design"><span>Design</span></button>
+            <button class="btn bg-transparent filter-btn" data-filter=".video"><span>Video</span></button>
         </div>
         <div id="gallery-content">
 
