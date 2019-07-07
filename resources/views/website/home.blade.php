@@ -11,10 +11,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/slider1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="assets/images/slider4.jpg" alt="First slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft">We plan the best events</p>
+                        <p class="fadeInLeft" style="color: white">We plan the best events</p>
                         <a class="btn bounceInRight">Online Request</a>
                     </div>
 
@@ -23,7 +23,7 @@
                     <img class="d-block w-100" src="assets/images/slider2.jpg" alt="Second slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft">We plan the best events</p>
+                        <p class="fadeInLeft" style="color: #2A348C">We plan the best events</p>
                         <a class="btn bounceInRight">Online Request</a>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <img class="d-block w-100" src="assets/images/slider3.jpg" alt="Second slide">
                     <div class="carousel-caption">
                         <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft">We plan the best events</p>
+                        <p class="fadeInLeft" style="color: white">We plan the best events</p>
                         <a class="btn bounceInRight">Online Request</a>
                     </div>
                 </div>
@@ -262,4 +262,25 @@
 @endsection
 @section('script')
     <script src="{{asset('assets/js/video-overlay.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            $('#image-slider').carousel({});
+            $(".owl-carousel").owlCarousel({
+                rtl: "en",
+                margin: 15,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        loop: true,
+                    },
+                    576: {
+                        items: 3,
+                    }
+                }
+            });
+        });
+    </script>
 @endsection

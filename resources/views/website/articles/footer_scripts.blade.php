@@ -10,29 +10,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dotimeout/1.0/jquery.ba-dotimeout.js"></script>
 <script src="https://kit.fontawesome.com/c2de738ac4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>-->
 
 <!--<script src="assets/js/jquery.mousewheel.min.js"></script>-->
 
 <script src="{{asset('assets/js/custom.js')}}"></script>
-<script>
-    $(document).ready(function () {
-        $('#image-slider').carousel({});
-        $(".owl-carousel").owlCarousel({
-            rtl: "en",
-            margin: 15,
-            responsiveClass: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            responsive: {
-                0: {
-                    items: 1,
-                    loop: true,
-                },
-                576: {
-                    items: 3,
-                }
-            }
-        });
-    });
-</script>
