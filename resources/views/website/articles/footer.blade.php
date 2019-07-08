@@ -34,7 +34,8 @@
         <hr id="full-line">
         <div class="row">
             <div class="col-12 text-center">
-                <h4>Cimax © 2019. All Rights Reserved.</h4>
+                <h4>Climax © 2019. All Rights Reserved. Developed By <a href="https://www.newsolutions.ps">New Solutions
+                        Co</a></h4>
             </div>
         </div>
     </div>
