@@ -11,15 +11,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{Request::is("/") ? '#slider' : '/'}}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link {{Request::is("/")?"active":''}}" href="{{Request::is("/") ? '#slider' : '/'}}">Home
+                        <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="ss">Who we are</a>
+                    <a class="nav-link {{Request::is("about")?"active":''}}" href="/about">Who we are</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{Request::is("/") ? '#services' : '/services'}}">Our lines</a>
+                    <a class="nav-link {{Request::is("services")?"active":''}}"
+                       href="{{Request::is("/") ? '#services' : '/services'}}">Our lines</a>
                 </li>
                 @if(Request::is('/'))
                     <li class="nav-item">
@@ -27,28 +29,17 @@
                     </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="{{Request::is("/") ? '#clients' : '/clients'}} ">Clients</a>
+                    <a class="nav-link" href="{{Request::is("/") ? '#clients' : url('/')."#clients"}} ">Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{Request::is("/") ? '#gallery' : '/gallery'}}">Gallery</a>
+                    <a class="nav-link {{Request::is("gallery") ? "active" :''}}"
+                       href="{{Request::is("/") ? '#gallery' : '/gallery'}}">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{Request::is("/") ? '#contact-us' : '/contact-us'}}">Contact
+                    <a class="nav-link {{Request::is("contact-us")?"active":''}}"
+                       href="{{Request::is("/") ? '#contact-us' : '/contact-us'}}">Contact
                         us</a>
                 </li>
-                <!--<li class="nav-item dropdown">-->
-                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"-->
-                <!--data-toggle="dropdown"-->
-                <!--aria-haspopup="true" aria-expanded="false">-->
-                <!--Our lines-->
-                <!--</a>-->
-                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                <!--<a class="dropdown-item" href="#">Action</a>-->
-                <!--<a class="dropdown-item" href="#">Another action</a>-->
-                <!--<div class="dropdown-divider"></div>-->
-                <!--<a class="dropdown-item" href="#">Something else here</a>-->
-                <!--</div>-->
-                <!--</li>-->
             </ul>
         </div>
     </nav>
