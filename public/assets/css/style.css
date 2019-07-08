@@ -637,6 +637,43 @@ button:focus {
     box-shadow: none;
 }
 
+/*----------------------------------------gallery-content(gallery page) --------------------------------*/
+#gallery-content img, #gallery-content a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#gallery-content li {
+    display: inline-block;
+}
+
+#gallery-content .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.33);
+    opacity: 0;
+    transition: all .4s;
+    top: 0;
+}
+
+#gallery-content li .overlay {
+    opacity: 1;
+}
+
+#gallery-content .overlay i {
+    color: #E2E2E2;
+    font-size: 2rem;
+}
+
+#gallery-content a:hover .overlay {
+    opacity: 1;
+}
+
+#gallery-content a:hover img {
+    transform: scale(1.5);
+}
+
 /*----------------------------------------footer------------------------------------*/
 footer {
     background-color: #333;

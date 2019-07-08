@@ -12,10 +12,10 @@ $(document).ready(function () {
         randomize: true,
         // lastRow:"center",
     }).on('jg.complete', function () {
-        $('#gallery-content a:not(:has(video))').swipebox();
-        $('#gallery-content').lightGallery({
+        $('#gallery-content').lightGallery();
+        $('#gallery-content a:has(video)').lightGallery({
             videojs: true,
             selector: "#1"
         });
     });
-})
+});
