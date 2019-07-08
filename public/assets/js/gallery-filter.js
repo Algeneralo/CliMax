@@ -15,7 +15,7 @@ $(document).ready(function () {
         $('#gallery-content').lightGallery();
         $('#gallery-content a:has(video)').lightGallery({
             videojs: true,
-            selector: "#1"
+            selector: "li"
         });
     });
 });

@@ -44,7 +44,7 @@
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <li id="1" data-poster="{{asset('assets/images/website/video-overlay.jpg')}}"
+                <li data-poster="{{asset('assets/images/website/video-overlay.jpg')}}"
                     data-sub-html="video caption1"
                     data-html="#video1">
                     <img class="w-100" src="{{asset('assets/images/website/video-overlay.jpg')}}"/>
