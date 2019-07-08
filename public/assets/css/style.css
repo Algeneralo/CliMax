@@ -237,7 +237,6 @@ button:focus {
 
 .services-item .card-title {
     /*font-family: "Montserrat", sans-serif;*/
-    color: black;
     font-size: 1.375em;
     font-weight: 600;
     padding: 5px 0;
@@ -245,7 +244,7 @@ button:focus {
 
 .services-item .card-title a {
     text-decoration: none;
-    color: black;
+    color: #2A348C;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -291,6 +290,7 @@ button:focus {
     text-decoration: none;
     text-transform: none;
     letter-spacing: -3.3px;
+    color: #2A348C;
 }
 
 .offers .offers-title p {
@@ -336,6 +336,7 @@ button:focus {
     /*font-family: "Montserrat", sans-serif;*/
     padding-top: 10px;
     font-weight: 600;
+    color: #2A348C;
 }
 
 .offer-item:nth-of-type(3n+2) p {
@@ -362,6 +363,7 @@ button:focus {
     font-weight: 700;
     text-transform: none;
     letter-spacing: -3.3px;
+    color: #2A348C;
 }
 
 .work-sample p {
@@ -529,6 +531,7 @@ button:focus {
     font-weight: 700;
     padding: 0 250px;
     margin-bottom: 40px;
+    color: #2A349B;
 }
 
 .contact-us textarea {
@@ -714,7 +717,11 @@ footer ul li a {
     font-weight: 600;
 }
 
-footer ul li a:hover {
+footer h4 a {
+    color: white;
+}
+
+footer ul li a:hover, footer h4 a:hover {
     color: #F05424;
     text-decoration: none;
 }
