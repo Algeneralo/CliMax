@@ -1,25 +1,6 @@
-var sections = $('section')
-    , nav = $('nav')
-    , nav_height = nav.outerHeight();
-
 //navigation bar animation on scoll and activate nav link
 $(document).on("scroll", function () {
-    var cur_pos = $(this).scrollTop();
 
-    sections.each(function () {
-        var top = $(this).offset().top - nav_height,
-            bottom = top + $(this).outerHeight();
-
-        if (cur_pos >= top && cur_pos <= bottom) {
-            nav.find('a').removeClass('active');
-            sections.removeClass('active');
-
-            $(this).addClass('active');
-            nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            if (nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active').length == 0)
-                nav.find('a[href="#slider"]').addClass('active');
-        }
-    });
 
     if ($(document).scrollTop() > 2) {
         $("nav").addClass("shrink fixed-top");
