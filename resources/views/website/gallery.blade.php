@@ -23,7 +23,14 @@
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
         }
+
+        li {
+            display: inline-block;
+        }
     </style>
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
 @endsection
 @section('body')
     @includeIf('website.articles.banner',['title'=>"Gallery",'name'=>'Gallery','image'=>'gallery-banner.jpg'])
@@ -40,52 +47,65 @@
         </div>
         <div id="gallery-content">
 
-            <a href="assets/images/upload/Ahsaa event.mp4" class="video">
-                <img src="assets/images/upload/Ahsaa event.mp4" title="Image Title">
+            <a href="assets/images/upload/Ahsaa event.mp4" class="video swipebox-video">
+                <div style="display:none;" id="video1">
+                    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+                        <source src="assets/images/upload/Ahsaa event.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <li id="1" data-poster="{{asset('assets/images/website/video-overlay.jpg')}}"
+                    data-sub-html="video caption1"
+                    data-html="#video1">
+                    <img src="{{asset('assets/images/website/video-overlay.jpg')}}"/>
+                </li>
             </a>
-            <a href="assets/images/upload/DSC_7396.JPG" class="photos">
+
+            <a href="assets/images/upload/DSC_7396.JPG"  rel="photos" class="photos">
                 <img src="assets/images/upload/DSC_7396.JPG" title="Image Title">
             </a>
-            <a href="assets/images/upload/DSC_7417.JPG" class="photos">
+            <a href="assets/images/upload/DSC_7417.JPG" rel="photos" class="photos">
                 <img src="assets/images/upload/DSC_7417.JPG" title="Image Title">
             </a>
-            <a href="assets/images/upload/DSC_7429.JPG" class="photos">
+            <a href="assets/images/upload/DSC_7429.JPG" rel="photos" class="photos">
                 <img src="assets/images/upload/DSC_7429.JPG" title="Image Title">
             </a>
-            <a href="assets/images/upload/DSC_7435.JPG" class="photos">
+            <a href="assets/images/upload/DSC_7435.JPG" rel="photos" class="photos">
                 <img src="assets/images/upload/DSC_7435.JPG" title="Image Title">
             </a>
-            <a href="assets/images/upload/DSC_7471.JPG" class="photos">
+            <a href="assets/images/upload/DSC_7471.JPG" rel="photos" class="photos">
                 <img src="assets/images/upload/DSC_7471.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" class="photos">
+            <a href="assets/images/website/gallery-1.JPG" rel="photos" class="photos">
                 <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/website/gallery-1.JPG" class="photos">
+            <a href="assets/images/website/gallery-1.JPG" rel="photos" class="photos">
                 <img src="assets/images/website/gallery-1.JPG" title="Image Title">
             </a>
-            <a href="assets/images/upload/1234.jpg" class="design">
+            <a href="assets/images/upload/1234.jpg" rel="design" class="design">
                 <img src="assets/images/upload/1234.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/3215.jpg" class="design">
+            <a href="assets/images/upload/3215.jpg" rel="design" class="design">
                 <img src="assets/images/upload/3215.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/4325.jpg" class="design">
+            <a href="assets/images/upload/4325.jpg" rel="design" class="design">
                 <img src="assets/images/upload/4325.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/5463.jpg" class="design">
+            <a href="assets/images/upload/5463.jpg" rel="design" class="design">
                 <img src="assets/images/upload/5463.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/54321.jpg" class="design">
+            <a href="assets/images/upload/54321.jpg" rel="design" class="design">
                 <img src="assets/images/upload/54321.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/Cap23.jpg" class="design">
+            <a href="assets/images/upload/Cap23.jpg" rel="design" class="design">
                 <img src="assets/images/upload/Cap23.jpg" title="Image Title">
             </a>
-            <a href="assets/images/upload/Capture12.jpg" class="design">
+            <a href="assets/images/upload/Capture12.jpg" rel="design" class="design">
                 <img src="assets/images/upload/Capture12.jpg" title="Image Title">
             </a>
+
         </div>
+
     </div>
 @endsection
 @section('script')
@@ -95,4 +115,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
     <script src="{{asset('assets/js/gallery-filter.js')}}"></script>
+
 @endsection
