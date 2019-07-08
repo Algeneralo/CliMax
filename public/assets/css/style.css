@@ -1213,6 +1213,10 @@ footer h4 {
         text-align: center;
     }
 
+    .map .mapouter {
+        min-height: 300px;
+    }
+
 }
 
 @media (max-width: 575.99px) {
