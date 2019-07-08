@@ -1,27 +1,4 @@
 @extends('website.layout')
-@section('style')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.css"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
-    <style>
-        nav {
-            position: relative !important;
-        }
-
-        .bg-white {
-            background-color: #fff !important;
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: #9d9c9b !important;
-        }
-
-    </style>
-    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
-@endsection
 @section('body')
     @includeIf('website.articles.banner',['title'=>"Our Best Events Gallery",'name'=>'Gallery','image'=>'gallery-banner.jpg'])
     <div class="container-fluid photos">
@@ -143,13 +120,4 @@
         </div>
 
     </div>
-@endsection
-@section('script')
-    <script src="{{asset("assets/js/jquery.swipebox.js")}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
-    <!-- endbower -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
-    <script src="{{asset('assets/js/gallery-filter.js')}}"></script>
-
 @endsection

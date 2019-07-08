@@ -4,26 +4,6 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
-    <style>
-        nav {
-            position: relative !important;
-        }
-
-        .bg-white {
-            background-color: #fff !important;
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: #9d9c9b !important;
-        }
-
-        #gallery-content img, #gallery-content a {
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-    </style>
 @endsection
 @section('body')
     @includeIf('website.articles.banner',['title'=>"Contact Us",'name'=>'Contact Us','image'=>'contact-us-banner.jpg'])

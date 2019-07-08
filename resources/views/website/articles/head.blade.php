@@ -21,20 +21,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="{{asset("assets/css/style.css")}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
     @yield('style')
     <style>
-        #overlay {
-            background: #ffffff;
-            color: #666666;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            z-index: 5000;
-            top: 0;
-            left: 0;
-            float: left;
-            text-align: center;
-            padding-top: 18%;
-        }
+
     </style>
+    @includeWhen(!Request::is("/"),'website.articles.customNavbarStyle')
 </head>
