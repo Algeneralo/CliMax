@@ -46,13 +46,13 @@
                 <div class="offset-md-1 col-md-6">
                     <div class="clients-items owl-carousel">
                         <div class="client-item">
-                            <img class="img-fluid" src="assets/images/clients/8rQgkvxt_400x400.jpg">
+                            <img class="img-fluid" src="assets/images/upload/8rQgkvxt_400x400.jpg">
                         </div>
                         <div class="client-item">
-                            <img class="img-fluid" src="assets/images/clients/329308478efa8.png">
+                            <img class="img-fluid" src="assets/images/upload/329308478efa8.png">
                         </div>
                         <div class="client-item">
-                            <img class="img-fluid" src="assets/images/clients/w8X0koju_400x400.jpg">
+                            <img class="img-fluid" src="assets/images/upload/w8X0koju_400x400.jpg">
                         </div>
                     </div>
                 </div>
