@@ -81,8 +81,8 @@
                     </div>
                 </div>
                 <div class="col-12 text-center">
-                    <a id="services-button" href="#" class="btn">
-                        View Info
+                    <a id="services-button" href="/services" class="btn">
+                        More Services
                     </a>
                 </div>
             </div>

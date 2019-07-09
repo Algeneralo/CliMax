@@ -225,7 +225,7 @@ button:focus {
     /*font-family: Pacifico, cursive;*/
 }
 
-.services p {
+.services p:not(".card-text") {
     font-size: 3.438em;
     font-weight: 700;
     letter-spacing: -2.4px;
@@ -271,7 +271,8 @@ button:focus {
 }
 
 .services-item .card-title a:hover {
-    color: #ff8a48;
+    /*color: #ff8a48;*/
+    color: #2A348C;
 }
 
 .services #services-button {
@@ -781,6 +782,83 @@ button:focus {
     width: 100%;
 }
 
+/*----------------------------------------details------------------------------------*/
+.details {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+}
+
+.details figure {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #2B2B2B;
+}
+
+.details figure .image {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.details figure img {
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.details figcaption {
+    padding: 3% 6%;
+}
+
+.details figcaption h4 {
+    color: #2A348C;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details figcaption img {
+    height: auto !important;
+    width: 45% !important;
+    margin-right: 10px;
+    /*margin-left: 10px;*/
+    float: unset !important;
+    margin-bottom: 10px !important;
+    right: calc(1%);
+}
+
+.details .date {
+    padding-bottom: 20px;
+    color: #c7c7c7;
+    font-size: 13px;
+}
+
+.sidebar h4 {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #3e90b0;
+}
+
+.sidebar li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    font-size: 16px;
+    color: #3e90b0;
+}
+
+.sidebar li a {
+    color: #2A348C;
+}
+
+.sidebar li a:hover {
+    color: #60003F;
+}
+
 /*----------------------------------------footer------------------------------------*/
 footer {
     background-color: #333;
@@ -1090,7 +1168,7 @@ footer h4 {
         padding: 40px 20px;
     }
 
-    .services p {
+    .services p:not(".card-text") {
         padding: 15px 0;
         font-size: 2rem;
     }

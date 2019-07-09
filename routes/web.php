@@ -26,7 +26,9 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('website.services');
 });
-
+//Route::get('/services/1', function () {
+//    return view('website.servicesDetails');
+//});
 Auth::routes();
 
 Route::get('/admin', function () {
