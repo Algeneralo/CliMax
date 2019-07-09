@@ -24,16 +24,6 @@
 
                             </div>
                         </div>
-                        <div class="services-item card col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="assets/images/website/service-5.jpg" alt="Card image cap">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <h5 class="card-title text-center ">
-                                    <a>Photography and video production </a>
-                                </h5>
-                                <p class="card-text"></p>
-
-                            </div>
-                        </div>
 
                         <div class="services-item card col-lg-4 col-sm-6">
                             <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
@@ -48,16 +38,6 @@
                                     <br>
                                     Printing solutions
                                 </p>
-
-                            </div>
-                        </div>
-                        <div class="services-item card col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="assets/images/website/service-4.jpg" alt="Card image cap">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <h5 class="card-title text-center ">
-                                    <a>Interior design</a>
-                                </h5>
-                                <p class="card-text"></p>
 
                             </div>
                         </div>
@@ -79,6 +59,27 @@
 
                             </div>
                         </div>
+                        <div class="services-item card col-lg-4 col-sm-6">
+                            <img class="card-img-top" src="assets/images/website/service-4.jpg" alt="Card image cap">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="card-title text-center ">
+                                    <a>Interior design</a>
+                                </h5>
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+                        <div class="services-item card col-lg-4 col-sm-6">
+                            <img class="card-img-top" src="assets/images/website/service-5.jpg" alt="Card image cap">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <h5 class="card-title text-center ">
+                                    <a>Photography and video production </a>
+                                </h5>
+                                <p class="card-text"></p>
+
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
