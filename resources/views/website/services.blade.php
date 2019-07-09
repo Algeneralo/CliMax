@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="services-item card col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="assets/images/website/services-2.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title text-center ">
                                     <a>Graphic design</a>
