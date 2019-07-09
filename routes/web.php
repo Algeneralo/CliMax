@@ -23,3 +23,21 @@ Route::get('/contact-us', function () {
 Route::get('/about', function () {
     return view('website.about');
 });
+Route::get('/services', function () {
+    return view('website.services');
+});
+
+Auth::routes();
+
+Route::get('/admin', function () {
+    return view('admin.slider.create');
+});
+
+//
+//Route::get('/error', function () {
+//    abort(403);
+//});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

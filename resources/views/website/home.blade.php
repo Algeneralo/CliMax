@@ -48,7 +48,7 @@
                 </p>
                 <div class="row services-body text-center d-flex justify-content-center">
                     <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/website/services-2.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
                                 <a href="#">Graphic design</a>
@@ -94,37 +94,38 @@
                 <div class="offer-items col-sm-7 col-md-6 pull-left">
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fal fa-pencil-paintbrush"></i>
+                            {{--<i class="fal fa-pencil-paintbrush"></i>--}}
+                            <img src="{{asset('assets/images/website/Creative.svg')}}">
                         </a>
                         <p class="text-center">Creative identities</p>
                     </div>
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fal fa-fingerprint"></i>
+                            <img src="{{asset('assets/images/website/Printing_solutions.svg')}}">
                         </a>
                         <p class="text-center">Printing solutions</p>
                     </div>
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fas fa-drafting-compass"></i>
+                            <img src="{{asset('assets/images/website/Creating_plans.svg')}}" style="width: 68%;">
                         </a>
                         <p class="text-center">Creating plans</p>
                     </div>
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fab fa-adobe"></i>
+                            <img src="{{asset('assets/images/website/Branding.svg')}}" style="width: 68%;">
                         </a>
                         <p class="text-center">Branding</p>
                     </div>
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fal fa-calendar-check"></i>
+                            <img src="{{asset('assets/images/website/Agenda.svg')}}">
                         </a>
                         <p class="text-center">Agenda</p>
                     </div>
                     <div class="offer-item col-6 col-sm-3">
                         <a>
-                            <i class="fas fa-file-chart-line"></i>
+                            <img src="{{asset('assets/images/website/Reports.svg')}}">
                         </a>
                         <p class="text-center">Reports</p>
                     </div>

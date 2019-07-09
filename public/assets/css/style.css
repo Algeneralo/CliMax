@@ -363,13 +363,16 @@ button:focus {
     padding-left: 11px;
 }
 
-.offer-item i {
-    color: #07B4E3;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
+/*.offer-item i {*/
+/*color: #07B4E3;*/
+/*-webkit-transition: all 0.3s ease;*/
+/*-ms-transition: all 0.3s ease;*/
+/*transition: all 0.3s ease;*/
+/*}*/
 
+.offer-item img {
+    width: 55%;
+}
 
 /*----------------------------------------work sample------------------------------------*/
 .work-sample {
