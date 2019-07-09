@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-white">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/website/logo-long-.png" class="w-100">
+            <img src="{{asset('assets/images/website/logo-long-.png')}}" class="w-100">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{Request::is("services")?"active":''}}"
+                    <a class="nav-link {{Request::is("services/*")||Request::is("services")?"active":''}}"
                        href="{{Request::is("/") ? '#services' : '/services'}}">Our lines</a>
                 </li>
                 @if(Request::is('/'))
