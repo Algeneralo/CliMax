@@ -46,7 +46,7 @@
                 <p class="col-12 text-center">
                     We’ll make your next celebration very special!
                 </p>
-                <div class="row services-body text-center">
+                <div class="row services-body text-center d-flex justify-content-center">
                     <div class="services-item card col-lg-3 col-sm-6">
                         <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
                         <div class="card-body">
