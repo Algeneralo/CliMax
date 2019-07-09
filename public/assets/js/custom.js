@@ -1,7 +1,5 @@
-//navigation bar animation on scoll and activate nav link
+//navigation bar animation on scroll
 $(document).on("scroll", function () {
-
-
     if ($(document).scrollTop() > 2) {
         $("nav").addClass("shrink fixed-top");
 
@@ -17,7 +15,7 @@ $(window).on("load", function () {
 
 
 
-//scroll down animation
+//navbar scroll down animation
 $("a.nav-link").click(function (e) {
     //if it's not link,scroll down to section
     var navHeight = 0, scrollHieght = 0;
