@@ -26,20 +26,18 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('website.services');
 });
-//Route::get('/services/1', function () {
-//    return view('website.servicesDetails');
-//});
+
 Auth::routes();
 
 Route::get('/admin', function () {
-    return view('admin.slider.create');
+    return view('admin.gallery.create');
 });
-
-//
-//Route::get('/error', function () {
-//    abort(403);
+Route::post('/file-upload', function (\Illuminate\Http\Request $request) {
+    return response()->json($request->all(), 200);
+});
+//Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+////    Route::get('/', "Admin\ConfigController@index");
+//    Route::match(["get", "post"], '/config/{id?}', "Admin\ConfigController@store");
+//    Route::resource('about', 'Admin\AboutController')->except(['show', 'store','destroy']);
 //});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes(['register' => false]);
