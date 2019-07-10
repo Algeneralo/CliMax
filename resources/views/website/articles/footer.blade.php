@@ -17,16 +17,16 @@
             <div class="col-12 text-center">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#">Gallery</a>
+                        <a href="/gallery">Gallery</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="/contact-us">Contact Us</a>
                     </li>
                     <li>
-                        <a href="#">Clients</a>
+                        <a href="/about">Who we are</a>
                     </li>
                 </ul>
             </div>
