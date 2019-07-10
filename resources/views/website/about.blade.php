@@ -109,7 +109,6 @@
 @section('script')
     <script>
         $(".owl-carousel").owlCarousel({
-            rtl: "en",
             margin: 15,
             responsiveClass: true,
             autoplay: true,

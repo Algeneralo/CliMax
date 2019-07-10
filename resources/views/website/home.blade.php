@@ -304,7 +304,6 @@
         $(document).ready(function () {
             $('#image-slider').carousel({});
             $(".owl-carousel").owlCarousel({
-                rtl: "en",
                 margin: 15,
                 responsiveClass: true,
                 autoplay: true,
