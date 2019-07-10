@@ -54,41 +54,52 @@
                         <div class="client-item">
                             <img class="img-fluid" src="assets/images/upload/w8X0koju_400x400.jpg">
                         </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/1.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/3.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/4.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/5.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/6.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="map">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 p-5">
-                    <div class="row p-md-5 pb-4">
-                        <h1>We are here to help you</h1>
-                    </div>
-                    <div class="row pr-md-5 pl-md-5">
-                        <div class=" col-12">
-                            <i class="fal fa-mobile"></i>
-                            <label class="pl-4">+966 50 437 6733</label>
-                        </div>
-                        <div class=" col-12">
-                            <i class="fal fa-phone fa-flip-horizontal"></i>
-                            <label class="pl-4">+966103891462</label>
-                        </div>
-                        <div class=" col-12">
-                            <i class="fal fa-envelope"></i>
-                            <label class="pl-4">info@climaxevent-sa.com</label>
-                        </div>
-                    </div>
+    <section id="contact-us" class="contact-us">
+        <div class="container">
+            <div class="row text-center">
+                <h1>We are here to help you</h1>
+            </div>
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-md-3">
+                    <i class="fal fa-mobile"></i>
+                    <label class="pl-4">+966 50 437 6733</label>
                 </div>
-                <div class="col-md-6 p-0">
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=75QX%2B58%20Al%20Khobar%20Saudi%20Arabia&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            </iframe>
-                        </div>
+                <div class="col-md-3">
+                    <i class="fal fa-phone fa-flip-horizontal"></i>
+                    <label class="pl-4">+966103891462</label>
+                </div>
+                <div class="col-md-3">
+                    <i class="fal fa-envelope"></i>
+                    <label class="pl-4">info@climaxevent-sa.com</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mapouter col-12">
+                    <div class="gmap_canvas">
+                        <iframe id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=75QX%2B58%20Al%20Khobar%20Saudi%20Arabia&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -112,7 +123,7 @@
                     items: 3,
                     loop: true,
                 },
-                
+
             }
         });
     </script>

@@ -30,10 +30,14 @@
                             </div>
                         </div>
                         <div class="row">
+                            <?php
+                            $url = "https://www.google.com/maps/place/26°17'16.6\"N+50°11'53.9\"E/@26.287937,50.1961233,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d26.287937!4d50.198312?hl=en-US";
+                            preg_match('/@(\-?[0-9]+\.[0-9]+),(\-?[0-9]+\.[0-9]+)/', $url, $match);
+                            ?>
                             <div class="mapouter col-12">
                                 <div class="gmap_canvas">
                                     <iframe id="gmap_canvas"
-                                            src="https://maps.google.com/maps?q=75QX%2B58%20Al%20Khobar%20Saudi%20Arabia&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                            src="https://maps.google.com/maps?q=+{{$match[1]}},{{$match[2]}}+&hl=es;z=14&amp;output=embed"
                                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                     </iframe>
                                 </div>

@@ -157,6 +157,21 @@
                         <div class="client-item">
                             <img class="img-fluid" src="assets/images/upload/w8X0koju_400x400.jpg">
                         </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/1.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/3.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/4.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/5.png">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-fluid" src="assets/images/upload/6.png">
+                        </div>
                     </div>
                 </div>
             </div>
