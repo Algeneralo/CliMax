@@ -13,7 +13,14 @@ $(window).on("load", function () {
         $("nav").addClass("shrink fixed-top");
 });
 
-
+$("#client_href").on("click", function (e) {
+    e.preventDefault();
+    if (window.location.pathname !== "/about" && window.location.pathname !== "/") {
+        e.preventDefault();
+        console.log("true")
+        window.location.replace($(this).attr("href"));
+    }
+})
 
 //navbar scroll down animation
 $("a.nav-link").click(function (e) {
@@ -22,9 +29,10 @@ $("a.nav-link").click(function (e) {
     if ($(this).attr("href").includes("#"))
         e.preventDefault();
     var href = $(this).attr("href");
-    if ($(window).width() < 960) {
+    if ($(window).width() < 960 || window.location.pathname === "/about") {
         //colse navar tabs if it's opend
-        $('.navbar-toggler').click();
+        if (!window.location.pathname === "/about")
+            $('.navbar-toggler').click();
         navHeight = Math.abs($(".navbar-collapse").height() - $("nav").height());
         scrollHieght = $(href).offset().top - navHeight;
         //remove navbar-collapse height

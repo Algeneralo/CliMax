@@ -29,7 +29,8 @@
                     </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="{{Request::is("/") ? '#clients' : url('/')."#clients"}} ">Clients</a>
+                    <a class="nav-link" id="client_href"
+                       href="{{Request::is("/")|| Request::is("about")? '#clients' : url('/#clients')}} ">Clients</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{Request::is("gallery") ? "active" :''}}"
