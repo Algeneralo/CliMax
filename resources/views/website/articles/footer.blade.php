@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="icon col-12 text-center">
-                <a href="">
+                <a href="https://www.facebook.com/Climax-Event-1051953421673023/">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/climax.ev?igshid=104a403rscp3p">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="">
+                <a href="https://twitter.com/climax_event?lang=en">
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
