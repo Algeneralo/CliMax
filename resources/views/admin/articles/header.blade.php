@@ -70,7 +70,7 @@
                         </a>
                     </li>
                     <li class="has-submenu">
-                        <a href="{{route('clients.index')}}">
+                        <a href="{{route('gallery.index')}}">
                             <i class="mdi mdi-google-photos"></i>
                             Gallery
                         </a>

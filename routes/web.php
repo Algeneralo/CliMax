@@ -37,4 +37,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('sliders', 'Admin\SliderController')->except(['show']);
     Route::resource('services', 'Admin\ServiceController')->except(['show']);
     Route::resource('clients', 'Admin\ClientController')->except(['show', 'edit', 'update']);
+    Route::resource('gallery', 'Admin\GalleryController')->except(['show', "edit", "update"]);
 });
