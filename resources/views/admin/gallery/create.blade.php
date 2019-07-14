@@ -129,10 +129,12 @@
                         if (result.value) {
 
                         } else {
-                            {{--window.location = "{{route("gallery.index")}}"--}}
+                            window.location = "{{route("gallery.index")}}"
                             // window.location = "/admin"
                         }
                     })
+                } else if (this.getQueuedFiles().length > 0) {
+                    this.processQueue();
                 }
             }
 
