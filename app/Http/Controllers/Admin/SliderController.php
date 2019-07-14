@@ -87,13 +87,14 @@ class SliderController extends Controller
      *
      * @param Slider $slider
      * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function destroy(Slider $slider)
     {
         //remove image from storage
-        if (file_exists(public_path('assets/img/upload/' . $slider->image)))
-            @unlink(public_path("assets/img/upload/" . $slider->image));
-        $status = $slider->forceDelete();
+        if (file_exists(public_path('assets/images/upload/' . $slider->image)))
+            @unlink(public_path("assets/images/upload/" . $slider->image));
+        $status = $slider->delete();
         if ($status)
             return $this->successResponse(route("sliders.index"), 'Deleted Successfully');
         return $this->failResponse();
