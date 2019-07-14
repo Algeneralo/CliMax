@@ -13,109 +13,36 @@
             <button class="btn bg-transparent filter-btn" data-filter=".video"><span>Video</span></button>
         </div>
         <div id="gallery-content">
-
-            <a href="assets/images/upload/Ahsaa event.mp4" class="video swipebox-video">
-                <div style="display:none;" id="video1">
-                    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
-                        <source src="assets/images/upload/Ahsaa event.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
-                <li data-poster="{{asset('assets/images/website/video-overlay.jpg')}}"
-                    data-sub-html="video caption1"
-                    data-html="#video1">
-                    <img class="w-100" src="{{asset('assets/images/website/video-overlay.jpg')}}"/>
-                    <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                        <i class="fal fa-play-circle"></i>
-                    </div>
-                </li>
-            </a>
-
-            <a href="assets/images/upload/DSC_7396.JPG" data-src="assets/images/upload/DSC_7396.JPG" rel="photos"
-               class="photos">
-                <img src="assets/images/upload/DSC_7396.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/DSC_7417.JPG" rel="photos" class="photos">
-                <img src="assets/images/upload/DSC_7417.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/DSC_7429.JPG" rel="photos" class="photos">
-                <img src="assets/images/upload/DSC_7429.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/DSC_7435.JPG" rel="photos" class="photos">
-                <img src="assets/images/upload/DSC_7435.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/DSC_7471.JPG" rel="photos" class="photos">
-                <img src="assets/images/upload/DSC_7471.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" rel="photos" class="photos">
-                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/website/gallery-1.JPG" rel="photos" class="photos">
-                <img src="assets/images/website/gallery-1.JPG" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/1234.jpg" rel="design" class="design">
-                <img src="assets/images/upload/1234.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/3215.jpg" rel="design" class="design">
-                <img src="assets/images/upload/3215.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/4325.jpg" rel="design" class="design">
-                <img src="assets/images/upload/4325.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/5463.jpg" rel="design" class="design">
-                <img src="assets/images/upload/5463.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/54321.jpg" rel="design" class="design">
-                <img src="assets/images/upload/54321.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/Cap23.jpg" rel="design" class="design">
-                <img src="assets/images/upload/Cap23.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
-            <a href="assets/images/upload/Capture12.jpg" rel="design" class="design">
-                <img src="assets/images/upload/Capture12.jpg" title="Image Title">
-                <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
-                    <i class="far fa-search"></i>
-                </div>
-            </a>
+            @foreach($gallery as $item)
+                @if($item->type=="video")
+                    <a href="assets/images/upload/Ahsaa event.mp4" class="video swipebox-video">
+                        <div style="display:none;" id="video{{$loop->index}}">
+                            <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+                                <source src="assets/images/upload/{{$item->file}}" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <li data-poster="{{asset('assets/images/upload/'.$item->file)}}"
+                            {{--data-sub-html="video caption1"--}}
+                            data-html="#video{{$loop->index}}">
+                            <img class="w-100"
+                                 src="{{asset('assets/images/upload/'.$item->videoThumbnail->thumbnail)}}"/>
+                            <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
+                                <i class="fal fa-play-circle"></i>
+                            </div>
+                        </li>
+                    </a>
+                @else
+                    <a href="assets/images/upload/{{$item->file}}" data-src="assets/images/upload/{{$item->file}}"
+                       rel="photos"
+                       class="{{$item->type}}">
+                        <img src="assets/images/upload/{{$item->file}}">
+                        <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center">
+                            <i class="far fa-search"></i>
+                        </div>
+                    </a>
+                @endif
+            @endforeach
 
         </div>
 

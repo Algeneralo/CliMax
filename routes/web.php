@@ -12,19 +12,10 @@
 */
 
 Route::get('/', "WebsiteController@index");
-
-Route::get('/gallery', function () {
-    return view('website.gallery');
-});
-Route::get('/contact-us', function () {
-    return view('website.contact-us');
-});
-Route::get('/about', function () {
-    return view('website.about');
-});
-Route::get('/services', function () {
-    return view('website.services');
-});
+Route::get('/gallery', "WebsiteController@gallery");
+Route::match(["get", "post"], '/contact-us', "WebsiteController@contactUs");
+Route::get('/about', "WebsiteController@services");
+Route::get('/services', "WebsiteController@services");
 
 Auth::routes();
 
