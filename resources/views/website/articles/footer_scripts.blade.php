@@ -22,3 +22,14 @@
 <script src="{{asset('assets/js/gallery-filter.js')}}"></script>
 
 <script src="{{asset('assets/js/custom.js')}}"></script>
+@if(session()->has('success'))
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            swal({
+                title: "{{session('success')}}",
+                icon: "success",
+            });
+        })
+    </script>
+@endif

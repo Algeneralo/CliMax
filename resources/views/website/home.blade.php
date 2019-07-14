@@ -200,19 +200,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4 mb-md-0">
-                    <form>
+                    <form action="/contact-us" method="post">
+                        @csrf
                         <div class="form-group">
                             <label for="form-name">Name</label>
-                            <input required type="email" class="form-control" id="form-name" placeholder="Name">
+                            <input required type="text" name="name" class="form-control" id="form-name"
+                                   placeholder="Name">
                         </div>
                         <div class="form-group">
                             <label for="form-email">Email Address</label>
-                            <input required type="email" class="form-control" id="form-email"
+                            <input required type="email" name="email" class="form-control" id="form-email"
                                    placeholder="Email Address">
                         </div>
                         <div class="form-group">
                             <label for="form-email">Message</label>
-                            <textarea required class="form-control" id="form-message"
+                            <textarea required class="form-control" name="message" id="form-message"
                                       placeholder="Your Message Here"></textarea>
                         </div>
                         <div class="text-center">
