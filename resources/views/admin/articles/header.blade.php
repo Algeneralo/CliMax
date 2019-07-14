@@ -75,6 +75,12 @@
                             Gallery
                         </a>
                     </li>
+                    <li class="has-submenu">
+                        <a href="{{route('mails.index')}}">
+                            <i class="dripicons-mail"></i>
+                            Emails
+                        </a>
+                    </li>
                 </ul><!-- End navigation menu -->
                 <div class="clearfix"></div>
             </div><!-- end #navigation -->

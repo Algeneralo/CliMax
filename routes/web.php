@@ -28,9 +28,6 @@ Route::get('/services', function () {
 
 Auth::routes();
 
-Route::post('/file-upload', function (\Illuminate\Http\Request $request) {
-    return response()->json($request->all(), 200);
-});
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/', "Admin\ConfigController@index");
     Route::resource('config', "Admin\ConfigController")->only(['store', 'update']);
@@ -38,4 +35,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('services', 'Admin\ServiceController')->except(['show']);
     Route::resource('clients', 'Admin\ClientController')->except(['show', 'edit', 'update']);
     Route::resource('gallery', 'Admin\GalleryController')->except(['show', "edit", "update"]);
+    Route::post("/mails/{id}/replay", "Admin\MailController@replay")->name("mails.replay");
+    Route::resource('mails', 'Admin\MailController')->except(["edit", "update", "store", "create"]);
 });
