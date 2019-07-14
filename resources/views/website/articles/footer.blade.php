@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="icon col-12 text-center">
-                <a target="_blank" href="https://www.facebook.com/Climax-Event-1051953421673023/">
+                <a target="_blank" href="{{$config->facebook??"#"}}">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a target="_blank" href="https://www.instagram.com/climax.ev/">
+                <a target="_blank" href="{{$config->instagram??"#"}}">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a target="_blank" href="https://twitter.com/climax_event?lang=en">
+                <a target="_blank" href="{{$config->twitter??"#"}}">
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
