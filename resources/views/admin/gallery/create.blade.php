@@ -67,6 +67,7 @@
         Dropzone.options.myDropzone = {
             autoProcessQueue: false,
             parallelUploads: 10,
+            timeout: 100000,
             init: function () {
                 dropZone = this;
                 this.on("complete", function (file) {
@@ -87,8 +88,8 @@
                 this.on('sending', function (file, xhr, formData) {
                     formData.append('type', $("select").val());
                 });
-                this.on("error", function(file, errormessage, xhr){
-                    if(xhr) {
+                this.on("error", function (file, errormessage, xhr) {
+                    if (xhr) {
                         var response = JSON.parse(xhr.responseText);
                         console.log(response.message);
                     }
