@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/climax.iml" filepath="$PROJECT_DIR$/.idea/climax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../ready-Admin/.idea/ready-Admin.iml" filepath="$PROJECT_DIR$/../../../ready-Admin/.idea/ready-Admin.iml" />
     </modules>
   </component>
 </project>

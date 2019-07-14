@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('website.home');
-});
+Route::get('/', "WebsiteController@index");
+
 Route::get('/gallery', function () {
     return view('website.gallery');
 });
@@ -29,15 +28,11 @@ Route::get('/services', function () {
 
 Auth::routes();
 
-Route::get('/admin', function () {
-    return view('admin.gallery.create');
-});
 Route::post('/file-upload', function (\Illuminate\Http\Request $request) {
     return response()->json($request->all(), 200);
 });
-//Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
-////    Route::get('/', "Admin\ConfigController@index");
-//    Route::match(["get", "post"], '/config/{id?}', "Admin\ConfigController@store");
-//    Route::resource('about', 'Admin\AboutController')->except(['show', 'store','destroy']);
-//});
-Auth::routes(['register' => false]);
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+    Route::get('/', "Admin\ConfigController@index");
+    Route::resource('config', "Admin\ConfigController")->only(['store', 'update']);
+
+});
