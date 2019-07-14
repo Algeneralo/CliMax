@@ -17,7 +17,7 @@ Route::match(["get", "post"], '/contact-us', "WebsiteController@contactUs");
 Route::get('/about', "WebsiteController@services");
 Route::get('/services', "WebsiteController@services");
 
-Auth::routes();
+Auth::routes(["register" => false]);
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/', "Admin\ConfigController@index");

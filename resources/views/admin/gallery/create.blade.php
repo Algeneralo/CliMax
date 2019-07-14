@@ -87,6 +87,12 @@
                 this.on('sending', function (file, xhr, formData) {
                     formData.append('type', $("select").val());
                 });
+                this.on("error", function(file, errormessage, xhr){
+                    if(xhr) {
+                        var response = JSON.parse(xhr.responseText);
+                        console.log(response.message);
+                    }
+                });
             },
             addRemoveLinks: true,
             accept: function (file, done) {
