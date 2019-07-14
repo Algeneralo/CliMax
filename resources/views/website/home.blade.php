@@ -42,7 +42,7 @@
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
-                                    <a href="#">{{$service->name}}</a>
+                                    <a>{{$service->name}}</a>
                                 </h5>
                             </div>
                         </div>
