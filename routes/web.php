@@ -34,5 +34,5 @@ Route::post('/file-upload', function (\Illuminate\Http\Request $request) {
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/', "Admin\ConfigController@index");
     Route::resource('config', "Admin\ConfigController")->only(['store', 'update']);
-
+    Route::resource('sliders', 'Admin\SliderController')->except(['show']);
 });

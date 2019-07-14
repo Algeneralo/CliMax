@@ -5,36 +5,25 @@
         <div id="image-slider" data-interval="6000" class="carousel slide carousel-fade" data-ride="carousel"
              data-pause="false">
             <ol class="carousel-indicators">
-                <li data-target="#image-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#image-slider" data-slide-to="1"></li>
-                <li data-target="#image-slider" data-slide-to="2"></li>
+                @foreach($slider as $item)
+                    <li data-target="#image-slider" data-slide-to="{{$loop->index}}"
+                        class="@if($loop->first) active @endif"></li>
+                @endforeach
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/website/slider4.jpg" alt="First slide">
-                    <div class="carousel-caption">
-                        <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft" style="color: white">We plan the best events</p>
-                        <a class="btn bounceInRight">Online Request</a>
-                    </div>
+                @foreach($slider as $item)
+                    <div class="carousel-item @if($loop->first) active @endif">
+                        <img class="d-block w-100" src="assets/images/upload/{{$item->image}}" alt="First slide">
+                        <div class="carousel-caption">
+                            <h4 class="bounceInDown"
+                                style="color: {{$item->first_text_color}}"> {{$item->first_text}}</h4>
+                            <p class="fadeInLeft"
+                               style="color: {{$item->second_text_color}}"> {{$item->second_text}}</p>
+                            <a class="btn bounceInRight">Online Request</a>
+                        </div>
 
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/website/slider2.jpg" alt="Second slide">
-                    <div class="carousel-caption">
-                        <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft" style="color: #2A348C">We plan the best events</p>
-                        <a class="btn bounceInRight">Online Request</a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/website/slider3.jpg" alt="Second slide">
-                    <div class="carousel-caption">
-                        <h4 class="bounceInDown">Let’s have a party! </h4>
-                        <p class="fadeInLeft" style="color: white">We plan the best events</p>
-                        <a class="btn bounceInRight">Online Request</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -47,38 +36,17 @@
                     We’ll make your next celebration very special!
                 </p>
                 <div class="row services-body text-center d-flex justify-content-center">
-                    <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/website/service-2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
-                                <a href="#">Graphic design</a>
-                            </h5>
+                    @foreach($services as $service)
+                        <div class="services-item card col-lg-3 col-sm-6">
+                            <img class="card-img-top" src="assets/images/upload/{{$service->image}}"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
+                                    <a href="#">{{$service->name}}</a>
+                                </h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/website/service-3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
-                                <a href="#">Event management</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/website/service-4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
-                                <a href="#">Interior design</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="services-item card col-lg-3 col-sm-6">
-                        <img class="card-img-top" src="assets/images/website/service-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center h-100 justify-content-center align-items-center d-flex">
-                                <a href="#">Setup</a>
-                            </h5>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="col-12 text-center">
                     <a id="services-button" href="/services" class="btn">
@@ -148,30 +116,11 @@
                 </div>
                 <div class="offset-md-1 col-md-6">
                     <div class="clients-items owl-carousel">
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/8rQgkvxt_400x400.jpg">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/329308478efa8.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/w8X0koju_400x400.jpg">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/1.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/3.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/4.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/5.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/6.png">
-                        </div>
+                        @foreach($clients as $client)
+                            <div class="client-item">
+                                <img class="img-fluid" src="assets/images/upload/{{$client->image}}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -228,22 +177,22 @@
                     <div class="row">
                         <div class=" col-12">
                             <i class="fal fa-mobile"></i>
-                            <label class="pl-4">+966 50 437 6733</label>
+                            <label class="pl-4">{{$config->phone??''}}</label>
                         </div>
                         <div class=" col-12">
                             <i class="fal fa-phone fa-flip-horizontal"></i>
-                            <label class="pl-4">+966103891462</label>
+                            <label class="pl-4">{{$config->telephone??''}}</label>
                         </div>
                         <div class=" col-12">
                             <i class="fal fa-envelope"></i>
-                            <label class="pl-4">info@climaxevent-sa.com</label>
+                            <label class="pl-4">{{$config->email??''}}</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="mapouter col-12">
                             <div class="gmap_canvas">
                                 <iframe id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=75QX%2B58%20Al%20Khobar%20Saudi%20Arabia&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                        src="https://maps.google.com/maps?q=+{{$config->latitude??''}},{{$config->longitude??''}}+&hl=es;z=14&data=!3m1!4b1!4m5!3m4!1s0x3e49e8135c08b9ff:0xf8f56572cb60625e!8m2!3d26.2879117!4d50.1983293&amp;output=embed"
                                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                 </iframe>
                             </div>
