@@ -11,10 +11,10 @@
             <div class="row">
                 <div class="text-center">
                     <p>
-                        Climax Event is a leader in total brand activation, it brings brands to life. We organize and
+                        {{$config->message??"Climax Event is a leader in total brand activation, it brings brands to life. We organize and
                         setup
                         high-quality events to reach clients’ optimum satisfaction through our permanent endeavors to
-                        excellence and improvement of our services constantly.
+                        excellence and improvement of our services constantlyss."}}
                     </p>
                 </div>
             </div>
@@ -45,30 +45,11 @@
                 </div>
                 <div class="offset-md-1 col-md-6">
                     <div class="clients-items owl-carousel">
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/8rQgkvxt_400x400.jpg">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/329308478efa8.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/w8X0koju_400x400.jpg">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/1.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/3.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/4.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/5.png">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-fluid" src="assets/images/upload/6.png">
-                        </div>
+                        @foreach($clients as $client)
+                            <div class="client-item">
+                                <img class="img-fluid" src="assets/images/upload/{{$client->image}}">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

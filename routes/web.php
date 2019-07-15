@@ -14,7 +14,7 @@
 Route::get('/', "WebsiteController@index");
 Route::get('/gallery', "WebsiteController@gallery");
 Route::match(["get", "post"], '/contact-us', "WebsiteController@contactUs");
-Route::get('/about', "WebsiteController@services");
+Route::get('/about', "WebsiteController@about");
 Route::get('/services', "WebsiteController@services");
 
 Auth::routes(["register" => false]);
