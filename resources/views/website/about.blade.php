@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="about-offer-img d-none d-md-block">
-            <img src="{{asset('assets/images/website/about-offer.jpg')}}">
+            <img src="{{asset('assets/images/website/service-4.jpg')}}">
         </div>
     </section>
     <section id="clients" class="clients">
