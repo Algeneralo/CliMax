@@ -28,7 +28,7 @@
                     <a href="index.html" class="logo">
                         <span class="logo-lg">
                             <img src="{{asset('assets/images/website/logo-long-.png')}}"
-                                 style="background-color: white;" alt="" height="50">
+                                alt="" height="50">
                         </span>
                     </a>
                 </li>
@@ -53,7 +53,7 @@
                     </li>
                     <li class="has-submenu">
                         <a href="{{route('sliders.index')}}">
-                            <i class="dripicons-view-apps"></i>
+                            <i class="mdi mdi-folder-multiple-image"></i>
                             Slider
                         </a>
                     </li>
@@ -77,7 +77,7 @@
                     </li>
                     <li class="has-submenu">
                         <a href="{{route('mails.index')}}">
-                            <i class="dripicons-mail"></i>
+                            <i class="mdi mdi-email-outline"></i>
                             Emails
                         </a>
                     </li>
