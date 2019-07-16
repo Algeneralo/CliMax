@@ -36,7 +36,7 @@
                     <td>
                         <img src="{{asset('assets/images/upload/'.$slider->image)}}" class="img-thumbnail w-25">
                     </td>
-                    <td width="11%">
+                    <td width="17%">
                         <a class="btn btn-warning" href="{{route('sliders.edit',$slider->id)}}">Edit</a>
                         <form action="{{route('sliders.destroy',$slider->id)}}" class="d-inline-block"
                               method="post">

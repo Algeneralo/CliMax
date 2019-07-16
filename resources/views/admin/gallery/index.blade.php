@@ -32,7 +32,7 @@
                         @endif
                     </td>
                     <td>{{$item->type}}</td>
-                    <td width="11%">
+                    <td width="17%">
                         {{--                        <a class="btn btn-warning" href="{{route('gallery.edit',$item->id)}}">Edit</a>--}}
                         <form action="{{route('gallery.destroy',$item->id)}}"
                               method="post">

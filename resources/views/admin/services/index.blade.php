@@ -28,7 +28,7 @@
                     <td><img src="{{asset('assets/images/upload/'.$service->image)}}"
                              class="img-thumbnail w-25">
                     </td>
-                    <td width="11%">
+                    <td width="16%">
                         <a class="btn btn-warning" href="{{route('services.edit',$service->id)}}">Edit</a>
                         <form action="{{route('services.destroy',$service->id)}}"
                               method="post">
