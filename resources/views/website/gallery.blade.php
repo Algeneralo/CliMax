@@ -15,7 +15,7 @@
         <div id="gallery-content">
             @foreach($gallery as $item)
                 @if($item->type=="video")
-                    <a href="assets/images/upload/Ahsaa event.mp4" class="video swipebox-video">
+                    <a href="assets/images/upload/{{$item->file}}" class="video swipebox-video">
                         <div style="display:none;" id="video{{$loop->index}}">
                             <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
                                 <source src="assets/images/upload/{{$item->file}}" type="video/mp4">
