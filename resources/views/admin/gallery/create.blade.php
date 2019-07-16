@@ -27,6 +27,8 @@
         <div class="row">
             <p class="col-12">
                 <b>Note:</b>You can upload multiple files,but it must be of the same type
+                <br>
+                All type accept images only
             </p>
             <div class="col-3">
                 <select class="form-control mb-3" required>
@@ -96,7 +98,7 @@
             addRemoveLinks: true,
             accept: function (file, done) {
                 //check if uploaded file is video, and user select a photo or vice versa
-                if (acceptedVideoTypes.includes(file.type.toLowerCase() && $('select').val() !== "video")) {
+                if (acceptedVideoTypes.includes(file.type.toLowerCase()) && $('select').val() !== "video") {
                     this.removeFile(file);
                     sweetAlert("You have to upload Image files only", '', 'error');
                     $("select").addClass("select-error");
