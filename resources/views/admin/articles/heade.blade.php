@@ -35,5 +35,10 @@
           href="{{asset('https://coderthemes.com/greeva/layouts/horizontal-dark/assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/app.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/admin_style.css')}}">
+    <style>
+        .table {
+            color: black !important;
+        }
+    </style>
     @yield('style')
 </head>
