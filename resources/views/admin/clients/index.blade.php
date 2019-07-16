@@ -4,6 +4,10 @@
         form {
             display: inline;
         }
+
+        .dataTables_filter {
+            display: none !important;
+        }
     </style>
 @endsection
 @section('body')
@@ -24,7 +28,7 @@
                     <td><img src="{{asset('assets/images/upload/'.$client->image)}}"
                              class="img-thumbnail w-25">
                     </td>
-                    <td width="11%">
+                    <td width="17%">
                         <form action="{{route('clients.destroy',$client->id)}}"
                               method="post">
                             @csrf
