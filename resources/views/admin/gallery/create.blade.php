@@ -27,8 +27,6 @@
         <div class="row">
             <p class="col-12">
                 <b>Note:</b>You can upload multiple files,but it must be of the same type
-                <br>
-                Uploading video require thumbnail photo also
             </p>
             <div class="col-3">
                 <select class="form-control mb-3" required>
