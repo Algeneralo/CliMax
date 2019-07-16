@@ -11,7 +11,8 @@
 <script src="https://kit.fontawesome.com/c2de738ac4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>-->
+<script src="{{asset('assets/libs/sweetalert2/sweetalert2.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery.sweet-alert.init.js')}}"></script>
 
 <!--<script src="assets/js/jquery.mousewheel.min.js"></script>-->
 <script src="{{asset("assets/js/jquery.swipebox.js")}}"></script>
@@ -23,12 +24,24 @@
 
 <script src="{{asset('assets/js/custom.js')}}"></script>
 @if(session()->has('success'))
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $(document).ready(function () {
             swal({
                 title: "{{session('success')}}",
                 icon: "success",
+            });
+        })
+    </script>
+@endif
+@if($errors->any())
+    <script>
+        $(document).ready(function () {
+            Swal.fire({
+                title: "Error",
+                html: @foreach ($errors->all() as $error)
+                    "<li>{{ $error }} </li>"
+                @endforeach,
+                icon: "error",
             });
         })
     </script>

@@ -37,7 +37,7 @@ class WebsiteController extends Controller
         if ($request->post()) {
             $request->validate([
                 "name" => "required",
-                "email" => "required|email",
+                "email" => "required|email|regex:/(.*)@myemail\.com/i",
                 "message" => "required",
             ]);
             $status = Mail::create($request->all());

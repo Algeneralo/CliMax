@@ -19,7 +19,9 @@
                                 style="color: {{$item->first_text_color}}"> {{$item->first_text}}</h4>
                             <p class="fadeInLeft"
                                style="color: {{$item->second_text_color}}"> {{$item->second_text}}</p>
-                            <a class="btn bounceInRight">Online Request</a>
+                            @if($item->button_text)
+                                <a href="{{$item->button_link}}" class="btn bounceInRight">{{$item->button_text}}</a>
+                            @endif
                         </div>
 
                     </div>

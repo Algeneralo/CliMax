@@ -17,7 +17,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <link href="{{'assets/css/animation.css'}}" rel="stylesheet">
-
+    <link href="{{asset('assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="{{asset("assets/css/style.css")}}" rel="stylesheet">
