@@ -60,5 +60,6 @@ class MailController extends Controller
             $message->subject("Re:" . Str::limit($mail->message, 20));
             $message->setBody($data, 'text/html');
         });
+        return redirect()->route("mails.index");
     }
 }
